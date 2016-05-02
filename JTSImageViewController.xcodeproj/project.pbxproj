@@ -8,16 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		26AF626B1CD72AC10028CCC7 /* JTSImageViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 26AF626A1CD72AC10028CCC7 /* JTSImageViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		26AF627D1CD72B000028CCC7 /* JTSAnimatedGIFUtility.h in Headers */ = {isa = PBXBuildFile; fileRef = 26AF62721CD72B000028CCC7 /* JTSAnimatedGIFUtility.h */; };
+		26AF627D1CD72B000028CCC7 /* JTSAnimatedGIFUtility.h in Headers */ = {isa = PBXBuildFile; fileRef = 26AF62721CD72B000028CCC7 /* JTSAnimatedGIFUtility.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		26AF627E1CD72B000028CCC7 /* JTSAnimatedGIFUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 26AF62731CD72B000028CCC7 /* JTSAnimatedGIFUtility.m */; };
-		26AF627F1CD72B000028CCC7 /* JTSImageInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 26AF62741CD72B000028CCC7 /* JTSImageInfo.h */; };
+		26AF627F1CD72B000028CCC7 /* JTSImageInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 26AF62741CD72B000028CCC7 /* JTSImageInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		26AF62801CD72B000028CCC7 /* JTSImageInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 26AF62751CD72B000028CCC7 /* JTSImageInfo.m */; };
 		26AF62811CD72B000028CCC7 /* JTSImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26AF62761CD72B000028CCC7 /* JTSImageViewController.m */; };
-		26AF62821CD72B000028CCC7 /* JTSSimpleImageDownloader.h in Headers */ = {isa = PBXBuildFile; fileRef = 26AF62771CD72B000028CCC7 /* JTSSimpleImageDownloader.h */; };
+		26AF62821CD72B000028CCC7 /* JTSSimpleImageDownloader.h in Headers */ = {isa = PBXBuildFile; fileRef = 26AF62771CD72B000028CCC7 /* JTSSimpleImageDownloader.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		26AF62831CD72B000028CCC7 /* JTSSimpleImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 26AF62781CD72B000028CCC7 /* JTSSimpleImageDownloader.m */; };
-		26AF62841CD72B000028CCC7 /* UIApplication+JTSImageViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 26AF62791CD72B000028CCC7 /* UIApplication+JTSImageViewController.h */; };
+		26AF62841CD72B000028CCC7 /* UIApplication+JTSImageViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 26AF62791CD72B000028CCC7 /* UIApplication+JTSImageViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		26AF62851CD72B000028CCC7 /* UIApplication+JTSImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26AF627A1CD72B000028CCC7 /* UIApplication+JTSImageViewController.m */; };
-		26AF62861CD72B000028CCC7 /* UIImage+JTSImageEffects.h in Headers */ = {isa = PBXBuildFile; fileRef = 26AF627B1CD72B000028CCC7 /* UIImage+JTSImageEffects.h */; };
+		26AF62861CD72B000028CCC7 /* UIImage+JTSImageEffects.h in Headers */ = {isa = PBXBuildFile; fileRef = 26AF627B1CD72B000028CCC7 /* UIImage+JTSImageEffects.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		26AF62871CD72B000028CCC7 /* UIImage+JTSImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 26AF627C1CD72B000028CCC7 /* UIImage+JTSImageEffects.m */; };
 /* End PBXBuildFile section */
 
@@ -323,6 +323,7 @@
 				26AF62711CD72AC10028CCC7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
