@@ -7,8 +7,14 @@
 //
 
 @import UIKit;
-
 #import "JTSImageInfo.h"
+
+//! Project version number for JTSImageViewController.
+FOUNDATION_EXPORT double JTSImageViewControllerVersionNumber;
+
+//! Project version string for JTSImageViewController.
+FOUNDATION_EXPORT const unsigned char JTSImageViewControllerVersionString[];
+
 
 ///--------------------------------------------------------------------------------------------------------------------
 /// Definitions
@@ -21,19 +27,19 @@
 @protocol JTSImageViewControllerAnimationDelegate;
 
 typedef NS_ENUM(NSInteger, JTSImageViewControllerMode) {
-    JTSImageViewControllerMode_Image,
-    JTSImageViewControllerMode_AltText,
+  JTSImageViewControllerMode_Image,
+  JTSImageViewControllerMode_AltText,
 };
 
 typedef NS_ENUM(NSInteger, JTSImageViewControllerTransition) {
-    JTSImageViewControllerTransition_FromOriginalPosition,
-    JTSImageViewControllerTransition_FromOffscreen,
+  JTSImageViewControllerTransition_FromOriginalPosition,
+  JTSImageViewControllerTransition_FromOffscreen,
 };
 
 typedef NS_OPTIONS(NSInteger, JTSImageViewControllerBackgroundOptions) {
-    JTSImageViewControllerBackgroundOption_None = 0,
-    JTSImageViewControllerBackgroundOption_Scaled = 1 << 0,
-    JTSImageViewControllerBackgroundOption_Blurred = 1 << 1,
+  JTSImageViewControllerBackgroundOption_None = 0,
+  JTSImageViewControllerBackgroundOption_Scaled = 1 << 0,
+  JTSImageViewControllerBackgroundOption_Blurred = 1 << 1,
 };
 
 extern CGFloat const JTSImageViewController_DefaultAlphaForBackgroundDimmingOverlay;
@@ -70,7 +76,7 @@ extern CGFloat const JTSImageViewController_DefaultBackgroundBlurRadius;
  
  @param mode The mode to be used. (JTSImageViewController has an alternate alt text mode). Required.
  
- @param backgroundStyle Currently, either scaled-and-dimmed, or scaled-dimmed-and-blurred. 
+ @param backgroundStyle Currently, either scaled-and-dimmed, or scaled-dimmed-and-blurred.
  The latter is like Tweetbot 3.0's background style.
  */
 - (instancetype)initWithImageInfo:(JTSImageInfo *)imageInfo
@@ -120,7 +126,7 @@ extern CGFloat const JTSImageViewController_DefaultBackgroundBlurRadius;
  and dismissal animations.
  
  This may be helpful if the reference image in your presenting view controller has been
- dimmed, such as for a dark mode. JTSImageViewController otherwise presents the animated 
+ dimmed, such as for a dark mode. JTSImageViewController otherwise presents the animated
  image view at full opacity, which can look jarring.
  */
 - (BOOL)imageViewerShouldFadeThumbnailsDuringPresentationAndDismissal:(JTSImageViewController *)imageViewer;
@@ -141,9 +147,9 @@ extern CGFloat const JTSImageViewController_DefaultBackgroundBlurRadius;
 
 /**
  The background color of the image view itself, not to be confused with the background
- color for the view controller's view. 
+ color for the view controller's view.
  
- You may wish to override this method if displaying an image with dark content on an 
+ You may wish to override this method if displaying an image with dark content on an
  otherwise clear background color (such as images from the XKCD What If? site).
  
  The default color is `[UIColor clearColor]`.
@@ -182,7 +188,7 @@ extern CGFloat const JTSImageViewController_DefaultBackgroundBlurRadius;
 /**
  Called when the image viewer is deciding whether to respond to user interactions.
  
- You may need to return NO if you are presenting custom, temporary UI on top of the image viewer. 
+ You may need to return NO if you are presenting custom, temporary UI on top of the image viewer.
  This method is called more than once. Returning NO does not "lock" the image viewer.
  */
 - (BOOL)imageViewerShouldTemporarilyIgnoreTouches:(JTSImageViewController *)imageViewer;
@@ -228,11 +234,4 @@ extern CGFloat const JTSImageViewController_DefaultBackgroundBlurRadius;
 - (void)imageViewerWillAnimateDismissal:(JTSImageViewController *)imageViewer withContainerView:(UIView *)containerView duration:(CGFloat)duration;
 
 @end
-
-
-
-
-
-
-
 
